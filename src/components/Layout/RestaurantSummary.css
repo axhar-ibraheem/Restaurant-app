@@ -1,0 +1,17 @@
+.restaurant-summary {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background: #3f3f3f;
+  width: 700px;
+  padding: 1rem 1rem;
+  text-align: center;
+  border-radius: 8px;
+  color: white;
+  box-shadow: -2px 4px 29px 0px rgba(0, 0, 0, 0.75);
+  transform: translateX(-50%) translateY(-50%);
+}
+.restaurant-summary h1 {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
