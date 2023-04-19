@@ -1,0 +1,26 @@
+.cart-button {
+  padding: 0.8rem 4rem;
+  border-radius: 25px;
+  background: #4d1601;
+  border: none;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.cart-icon {
+  margin-right: 0.8rem;
+}
+.cart-text {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cart-number {
+  margin-left: 0.8rem;
+  background: #642f1a;
+  padding: 0.25rem 1rem;
+  border-radius: 35px;
+}
