@@ -1,10 +1,10 @@
 .restaurant-summary {
-  position: fixed;
+  position: relative;
   top: 50%;
   left: 50%;
   background: #3f3f3f;
   width: 700px;
-  padding: 1rem 1rem;
+  padding: 1.5rem;
   text-align: center;
   border-radius: 8px;
   color: white;
@@ -14,4 +14,8 @@
 .restaurant-summary h1 {
   text-transform: capitalize;
   letter-spacing: 1px;
+  padding-bottom: 1rem;
+}
+.restaurant-summary p {
+  padding-bottom: 1rem;
 }

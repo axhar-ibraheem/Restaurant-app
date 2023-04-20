@@ -1,13 +1,13 @@
 import Header from "./components/Layout/Header";
 import React from "react";
-import RestuarantSummary from "./components/Layout/RestuarantSummary";
+import Meals from "./components/Meals/Meals";
 
 function App() {
   return (
     <React.Fragment>
       <Header></Header>
       <main>
-        <RestuarantSummary></RestuarantSummary>
+        <Meals></Meals>
       </main>
     </React.Fragment>
   );
