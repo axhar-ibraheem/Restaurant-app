@@ -1,0 +1,29 @@
+.meals-form {
+  text-align: right;
+}
+.input {
+  display: flex;
+  margin-bottom: 0.8rem;
+}
+
+.meals-label {
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-right: 0.7rem;
+}
+.meals-input {
+  width: 3rem;
+  padding: 0.2rem 0.2rem;
+  border-radius: 6px;
+  border: 1px solid #888885;
+}
+
+.meals-btn {
+  padding: 0.3rem 1.8rem;
+  background: #641f04;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}

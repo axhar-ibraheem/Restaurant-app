@@ -1,6 +1,7 @@
 import React from "react";
 import "./MealItems.css";
 import Card from "../UI/Card";
+import MealsForm from "./MealsForm";
 
 const DUMMY_MEALS = [
   {
@@ -37,7 +38,7 @@ const MealItems = () => {
         <div className="description">{item.description}</div>
         <div className="price">{`$${item.price}`}</div>
       </div>
-      <div></div>
+      <MealsForm></MealsForm>
     </li>
   ));
 
