@@ -2,10 +2,10 @@ import React from "react";
 import { BsCartPlusFill } from "react-icons/bs";
 
 import "./CartButton.css";
-const CartButton = () => {
+const CartButton = (props) => {
   return (
     <React.Fragment>
-      <button className="cart-button">
+      <button onClick={props.click} className="cart-button">
         <span className="cart-icon">
           <BsCartPlusFill />
         </span>
