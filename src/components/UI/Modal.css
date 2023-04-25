@@ -10,18 +10,19 @@
 .modal {
   background: rgb(255, 255, 255);
   position: fixed;
-  top: 25vh;
-  left: 50%;
+  top: 20vh;
+  left: 5%;
   width: 90%;
   border: none;
   border-radius: 12px;
   padding: 1rem;
   box-shadow: -2px 4px 29px 0px rgba(0, 0, 0, 0.75);
-  transform: translateX(-50%) translateY(-50%);
+
   z-index: 30;
 }
 @media screen and (min-width: 768px) {
   .modal {
-    width: 40rem;
+    width: 38rem;
+    left: calc(50% - 19rem);
   }
 }

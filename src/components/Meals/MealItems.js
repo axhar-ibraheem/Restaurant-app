@@ -1,7 +1,7 @@
 import React from "react";
 import "./MealItems.css";
 import Card from "../UI/Card";
-import MealsForm from "./MealsForm";
+import MealList from "./MealItem/MealList";
 
 const DUMMY_MEALS = [
   {
@@ -32,14 +32,13 @@ const DUMMY_MEALS = [
 
 const MealItems = () => {
   const mealItemsList = DUMMY_MEALS.map((item) => (
-    <li className="meal-items-list" key={item.id}>
-      <div>
-        <h3>{item.name}</h3>
-        <div className="description">{item.description}</div>
-        <div className="price">{`$${item.price}`}</div>
-      </div>
-      <MealsForm></MealsForm>
-    </li>
+    <MealList
+      key={item.id}
+      id={item.id}
+      name={item.name}
+      price={item.price}
+      description={item.description}
+    />
   ));
 
   return (
