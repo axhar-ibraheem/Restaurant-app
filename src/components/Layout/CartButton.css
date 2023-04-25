@@ -1,5 +1,5 @@
 .cart-button {
-  padding: 0.8rem 3rem;
+  padding: 0.8rem 1rem;
   border-radius: 30px;
   background: #4d1601;
   border: none;
@@ -23,4 +23,9 @@
   background: #b23b0c;
   padding: 0.25rem 1rem;
   border-radius: 35px;
+}
+@media screen and (min-width: 768px) {
+  .cart-button {
+    padding: 0.8rem 3rem;
+  }
 }

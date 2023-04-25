@@ -12,7 +12,6 @@ const cartReducer = (state, action) => {
 
     let updatedItems;
     let isPresent = false;
-
     const changedItems = state.items.map((ele) => {
       if (ele.id === action.payload.id) {
         isPresent = true;
@@ -33,6 +32,32 @@ const cartReducer = (state, action) => {
     return {
       items: updatedItems,
       totalAmount: updatedTotalAmount,
+    };
+  } else if (action.type === "REMOVE_ITEM") {
+    let itemPrice;
+    let itemAmount;
+    let newItems = state.items.map((item) => {
+      if (item.id === action.id) {
+        itemPrice = item.price;
+        itemAmount = item.amount;
+
+        if (itemAmount > 1) {
+          return {
+            ...item,
+            amount: item.amount - 1,
+          };
+        }
+      }
+      return item;
+    });
+
+    if (itemAmount == 1) {
+      newItems = state.items.filter((item) => item.id !== action.id);
+    }
+    const newTotalAmount = Math.abs(state.totalAmount - itemPrice);
+    return {
+      items: newItems,
+      totalAmount: newTotalAmount,
     };
   }
 };

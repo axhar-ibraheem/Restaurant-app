@@ -1,7 +1,10 @@
 .order-item {
   list-style-type: none;
   margin-bottom: 1rem;
-  border-bottom: 1px solid #641f04;
+  border-bottom: 2px solid #641f04;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .item-details {
@@ -23,4 +26,25 @@
 .order-price {
   color: #641f04;
   font-weight: bold;
+}
+.order-btn {
+  margin-right: 1rem;
+}
+.order-btn button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 5px;
+  border: 1px solid #641f04;
+  cursor: pointer;
+  width: 2.7rem;
+  height: 1.8rem;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  margin-left: 0.7rem;
+  background: transparent;
+  color: #9b2c00;
+}
+.order-btn button:hover {
+  background: #641f04;
+  color: white;
 }

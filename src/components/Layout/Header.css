@@ -6,16 +6,16 @@
   height: 5rem;
   background-color: #641f04;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 0 7rem;
+  padding: 0.5rem;
   z-index: 10;
 }
 .header h1 {
   color: white;
   text-transform: capitalize;
-
   letter-spacing: 2px;
+  text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.6);
 }
 .mealimage {
   width: 100%;
@@ -28,4 +28,11 @@
   width: 100vw;
   object-fit: cover;
   height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    justify-content: space-between;
+    padding: 0 7rem;
+  }
 }
