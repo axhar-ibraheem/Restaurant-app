@@ -9,12 +9,13 @@ const cartReducer = (state, action) => {
   if (action.type === "ADD_ITEM") {
     const updatedTotalAmount =
       state.totalAmount + action.payload.price * action.payload.amount;
-
     let updatedItems;
     let isPresent = false;
+
     const changedItems = state.items.map((ele) => {
       if (ele.id === action.payload.id) {
         isPresent = true;
+
         return {
           ...ele,
           amount: ele.amount + action.payload.amount,
@@ -40,7 +41,6 @@ const cartReducer = (state, action) => {
       if (item.id === action.id) {
         itemPrice = item.price;
         itemAmount = item.amount;
-
         if (itemAmount > 1) {
           return {
             ...item,
@@ -51,7 +51,7 @@ const cartReducer = (state, action) => {
       return item;
     });
 
-    if (itemAmount == 1) {
+    if (itemAmount === 1) {
       newItems = state.items.filter((item) => item.id !== action.id);
     }
     const newTotalAmount = Math.abs(state.totalAmount - itemPrice);

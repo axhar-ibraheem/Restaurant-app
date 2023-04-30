@@ -4,9 +4,12 @@ import React, { useContext } from "react";
 
 const CartItem = (props) => {
   const ctx = useContext(CartContext);
+
+
   const removeButtonHandler = () => {
     ctx.removeItem(props.id);
   };
+  
   const addItemHandler = () => {
     ctx.addItem({
       ...props,
